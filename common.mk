@@ -307,7 +307,8 @@ PRODUCT_PACKAGES += \
 	libGLESv2_angle
 
 PRODUCT_VENDOR_PROPERTIES += \
-	persist.graphics.egl=angle
+	persist.graphics.egl=angle \
+        debug.renderengine.backend=skiavkthreaded
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
